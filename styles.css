@@ -1,0 +1,590 @@
+body {
+  font-family: 'Commissioner', sans-serif;
+  background-color: #f5f5f5;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 20px 20px 30px;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 20px 20px 0;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  color: hsl(0, 0%, 48%);
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.p-text {
+  margin: 30px 20px 10px 20px;
+}
+
+.cyan-text {
+  margin: 20px 20px 0 20px;
+  color: hsl(176, 50%, 47%);
+  font-weight: 500;
+  text-align: right;
+}
+
+.cyan-text-modal {
+  margin-top: -23px;
+}
+
+.cyan-text-special {
+  width: 300px;
+  margin-left: 110px;
+}
+
+.h1-style {
+  font-size: 30px;
+  font-weight: 700;
+  color: Black
+}
+
+#title {
+  background-image: url("images/image-hero-desktop.jpg");
+  background-repeat: no-repeat;
+  height: 40vh;
+  background-size: cover;
+}
+
+.container-fluid {
+  padding: 2% 10% 3%;
+}
+
+.brand {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.nav-item {
+  margin: 0;
+  text-align: right;
+  padding: 5px;
+}
+
+#mastercraft {
+  margin-top: -100px;
+  text-align: center;
+}
+
+.logo-mastercraft {
+  width: 60px;
+  margin-top: -100px;
+}
+
+.section-layout {
+  background-color: white;
+  border-radius: 10px;
+  width: 50%;
+  margin: 1% auto;
+  padding: 2%;
+}
+
+.button-master {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.btn-cyan {
+  border-radius: 40px;
+  border: none;
+  color: hsl(193, 100%, 96%);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 18px 50px 18px 50px;
+  width: 230px;
+  background-color: hsl(176, 50%, 47%);
+  position: relative;
+  text-decoration: none;
+  display: flex;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.btn-cyan:hover {
+  background-color: hsl(176, 72%, 28%);
+}
+
+.btn-cyan-small {
+  border-radius: 40px;
+  border: none;
+  color: hsl(193, 100%, 96%);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 15px 45px;
+  width: 200px;
+  background-color: hsl(176, 50%, 47%);
+  position: relative;
+  text-decoration: none;
+  display: flex;
+  cursor: pointer;
+  margin: 20px;
+  float: right;
+}
+
+.btn-cyan-small:hover {
+  background-color: hsl(176, 72%, 28%);
+}
+
+.btn-inactive {
+  background-color: hsl(0, 0%, 48%);
+}
+
+.btn-inactive:hover {
+  background-color: hsl(0, 0%, 48%);
+}
+
+.bookmark {
+  background-color: #f5f5f5;
+  border-radius: 40px;
+  width: 200px;
+  height: 60px;
+  float: right;
+  margin-right: 20px;
+}
+
+.bookmark-image {
+  float: left;
+  height: 60px;
+}
+
+.bookmark-text {
+  padding-top: 18px;
+  padding-left: 55px;
+  color: hsl(0, 0%, 48%);
+  font-weight: 500;
+  text-align: left;
+}
+
+.js-bookmarked {
+  color: hsl(176, 50%, 47%);
+  font-weight: 700;
+}
+
+.mid-div-border {
+  border-right-style: solid;
+  border-left-style: solid;
+  border-color: #f5f5f5;
+  border-width: 2px;
+  margin-bottom: 20px;
+}
+
+.no-margin {
+  margin-bottom: 0;
+}
+
+.progress {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.cyan-bar {
+  background-color: hsl(176, 50%, 47%);
+}
+
+.box-layout {
+  background-color: white;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #f5f5f5;
+  border-width: 2px;
+  margin: 20px 20px 0;
+  padding: 5px;
+}
+
+/*Modal*/
+.modal-back1 {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  padding-left: 15px;
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 51%;
+  /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  width: 30px;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-left: 95%;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.radio-div-modal {
+  margin: 30px 20px 20px;
+}
+
+.radio-color {
+  font-weight: 700;
+}
+
+.radio-color:hover {
+  font-weight: 700;
+  color: hsl(176, 50%, 47%)
+}
+
+.check-color {
+  border-color: hsl(176, 50%, 47%) !important;
+  background-color: white !important;
+  margin-right: 10px;
+}
+
+.check-color:checked {
+  border-color: hsl(176, 50%, 47%) !important;
+  background-color: hsl(176, 50%, 47%) !important;
+}
+
+.modal-left {
+  float: right;
+  margin-top: -3px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.modal-nr {
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+}
+
+.p-modal {
+  margin-left: 48px;
+}
+
+.hidden-pledge {
+  margin: 0;
+  padding-top: 20px;
+  border-top-style: solid;
+  border-color: #f5f5f5;
+  border-width: 2px;
+}
+
+.pledge {
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  background-color: white;
+  border-color: hsl(176, 50%, 47%);
+  border-width: 2px;
+}
+
+#pledge {
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border-color: hsl(176, 50%, 47%);
+  border-width: 2px;
+}
+
+.input-pledge {
+  padding: 0;
+}
+
+.modal-below {
+  display: none;
+}
+
+.continue {
+  padding: 9px 20px;
+  width: 110px;
+  margin: auto;
+}
+
+.selected-pledge {
+  border-color: hsl(176, 50%, 47%);
+  border-width: 2px;
+}
+
+.pladge-center {
+  margin-top: 8px;
+  margin-left: 35px;
+}
+
+.thanks {
+  text-align: center;
+  width: 30%;
+}
+
+.check {
+  width: 60px;
+  display: block;
+  margin: 40px auto 30px auto;
+}
+
+#got-it {
+  display: block;
+  margin: 20px auto 30px;
+  padding: 10px 15px;
+  width: 130px;
+}
+
+@media (max-width: 1300px) {
+  .section-layout {
+    width: 65%;
+  }
+
+  .modal-content {
+    width: 65%;
+  }
+
+@media (max-width: 1100px) {
+  .section-layout {
+    width: 65%;
+  }
+
+  .modal-content {
+    width: 73%;
+  }
+
+  .thanks {
+    text-align: center;
+    width: 50%;
+  }
+}
+
+@media (max-width: 900px) {
+
+  #title {
+    background-image: url("images/image-hero-mobile.jpg");
+    background-repeat: no-repeat;
+    height: 50vh;
+    background-size: cover;
+  }
+
+  .section-layout {
+    width: 85%;
+  }
+
+  h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+
+  p {
+    font-size: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  .logo-mastercraft {
+    width: 50px;
+    margin-top: -50px;
+  }
+
+  .smallh1 {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+
+  #mastercraft {
+    margin-top: -50px;
+    text-align: center;
+  }
+
+  .modal-content {
+    width: 90%;
+
+
+  }
+
+  .modal-back1 {
+   padding-right: 2%
+  }
+
+  .btn-cyan {
+    font-size: 15px;
+    padding: 13px 33px 13px 40px;
+    width: 200px;
+  }
+
+  .bookmark {
+    background-color: #f5f5f5;
+    border-radius: 40px;
+    width: 50px;
+    height: 50px;
+    float: right;
+    margin-right: 20px;
+  }
+
+  .bookmark-image {
+    height: 50px;
+  }
+
+  .bookmark-text {
+    display: none;
+  }
+
+  #scale {
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .mid-div-border {
+    content: ""; /* This is necessary for the pseudo element to work. */
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 50%; /* Change this to whatever width you want. */
+    border-bottom: 2px solid #f5f5f5; /* This creates the border. Replace black with whatever color you want. */
+    border-top: 2px solid #f5f5f5;
+    border-right: none;
+    border-left: none;
+  }
+
+  .numbers {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+ .progress {
+   border-radius: 40px;
+   height: 12px;
+   margin-bottom: 20px;
+ }
+
+ .cyan-bar {
+   border-radius: 40px;
+   height: 12px;
+ }
+
+ .cyan-text {
+   text-align: left;
+   margin-top: 10px;
+ }
+
+ .p-text {
+   margin-top: 10px;
+ }
+
+ .btn-cyan-small {
+   font-size: 15px;
+   padding: 10px 30px;
+   width: 170px;
+   margin: 20px;
+   float: left;
+ }
+
+
+
+ .box-layout {
+   margin: 10px 0;
+
+ }
+
+ .pledge {
+   margin-left: 12px;
+
+ }
+
+ .verysmallh1 {
+   font-size: 16px;
+   margin-top: -25px;
+ }
+
+ .check-color {
+   margin: 20px 20px 0 0;
+ }
+
+ .first-check {
+   margin-top: 5px;
+ }
+
+ .cyan-text-modal {
+   margin-top: -10px;
+   margin-left: 40px;
+ }
+
+ .cyan-text-special {
+   width: 300px;
+   margin-left: 0px;
+ }
+
+ .radio-div-modal {
+   margin-left: 10px;
+ }
+
+ .p-modal {
+    margin-left: 10px;
+
+}
+
+.pladge-center {
+  text-align: center;
+  margin-top: 0;
+}
+
+.continue {
+  padding: 9px 18px ;
+  width: 100px;
+  margin: auto;
+}
+
+.modal-left {
+  display: none;
+}
+
+.modal-below {
+  display: block;
+}
+
+.check {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.h2thanks {
+  font-size: 20px;
+}
+
+.thanks {
+  margin-top: 30%;
+}
