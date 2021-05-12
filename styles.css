@@ -433,8 +433,6 @@ p {
 
   .modal-content {
     width: 90%;
-
-
   }
 
   .modal-back1 {
@@ -443,8 +441,8 @@ p {
 
   .btn-cyan {
     font-size: 15px;
-    padding: 13px 33px 13px 40px;
-    width: 200px;
+    padding: 13px 33px 13px 30px;
+    width: 180px;
   }
 
   .bookmark {
@@ -574,6 +572,10 @@ p {
 
 .modal-below {
   display: block;
+}
+
+.bigger-div {
+  padding-right: 0;
 }
 
 .check {
